@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Resolución de Problemas</title>
+    <script src="main.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            text-decoration: underline;
+            color: #333;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        code {
+            font-size: 16px;
+            margin: 0px 5px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Resolución de Problemas</h1>
+    </div>
+    <p>
+        Este sitio está dedicado a la resolución de problemas en diferentes áreas
+    </p>
+    <h2>Ejercicios de Programación</h2>
+    <div class="code">
+        <code>
+            🤔Resolvamos estos ejercicios para practicar la programación:
+            <h3>SUMA DE NÚMEROS</h3>
+            <p>Ingrese el primer número:</p>
+            <input type="number" id="num1">
+            <p>Ingrese el segundo número:</p>
+            <input type="number" id="num2">
+            <input type="button" onclick="calcula()" value="=">
+            <p id="resultado"></p>
+            <br>
+            <h3>PROMEDIO DE 4 EXÁMENES</h3>
+            <p>Promedio de exámenes</p>
+            <input type="number" id="examen1" placeholder="Ingrese la nota del primer examen">
+            <input type="number" id="examen2" placeholder="Ingrese la nota del segundo examen">
+            <input type="number" id="examen3" placeholder="Ingrese la nota del tercer examen">
+            <input type="number" id="examen4" placeholder="Ingrese la nota del cuarto examen">
+            <button onclick="calcularPromedio()">⌨Calcular promedio</button>
+            <p id="promedio"></p>
+            
+            <h3>ÁREA DE RECTÁNGULO</h3>
+            Base:
+            <input type="number" id="base">
+            Altura:
+            <input type="number" id="altura">
+            <br><br>
+            <button onclick="calcularArea()">=</button>
+            <p id="area"></p>
+
+            <h3>ÁREA DE TRIÁNGULO</h3>
+            Base:
+            <input type="number" id="base_t">
+            Altura:
+            <input type="number" id="altura_t">
+            <br><br>
+            <button onclick="calcular_areaTriangulo()">=</button>
+            <p>Resultado: </p>
+            <p id="area_t"></p>
+
+            <h3>ÁREA DE CIRCUNFERENCIA</h3>
+            Area:
+            <input type="number" id="radio_c">
+            <br><br>
+            <button onclick="calcular_areaCircunferencia()">=</button>
+            <p>Resultado: </p>
+            <p id="area_c"></p>
+
+            <h3>Calculadora de sueldo</h3>
+            Cabe destacar que he dividido el salario por 24 para convertir el sueldo por hora en sueldo por día,
+            <br>
+            <br>
+            esto con el fin de dividirlo fácilmente y no tener que hacer cálculos extra.
+            <br>
+            <br>
+            <label for="horas">Horas trabajadas:</label>
+            <input type="number" id="horas">
+            <br>
+            <br>
+            <label for="salario">Salario por hora:</label>
+            <input type="number" id="salario">
+            <br>
+            <br>
+            <button onclick="salario()">💰Calcular Salario</button>
+            <br>
+            <div id="sueldo"></div>
+            <br>
+
+            <h3>Ordenar Tela para Presas de Vestir</h3>
+            <label for="metros">Cuantos metros de tela necesitas?</label>
+            <input type="number" id="metros">
+            <button onclick="calcularPulgadas()">📐Calcular Pulgadas</button>
+            <br>
+            <div id="pulgadas"></div>
+
+            <h3>Convertidor de Soles a Dólares</h3>
+            <p>Cantidad de soles(S/)</p>
+            <input type="number" id="soles" min="1" max="10000000" />
+            <p>Precio del Dólar($)</p>
+            <input type="number" id="dolarprecio" />
+            <br>
+            <br>
+            <button onclick="convertir()">💵Convertir</button>
+            <p id="dolartotal"></p>
+
+            <h3>Calcular la edad por el año actual</h3>
+            <p>📅Año Actual</p>
+            <input type="number" id="actualy" min="1800" max="3000" />
+            <p>👶Año de Nacimiento</p>
+            <input type="number" id="firsty" />
+            <br>
+            <br>
+            <button onclick="edad()">👨‍💼Edad</button>
+            <p id="edad"></p>
+
+            <h3>Menor edad</h3>
+                <p>Ingrese tres nombres y edades</p>
+                
+                        <label for="nombre1">Nombre 1:</label><br>
+                        <input type="text" id="nombre1" name="nombre1"><br>
+                        <label for="edad1">Edad 1:</label><br>
+                        <input type="number" id="edad1" name="edad1"><br>
+                    
+                        <label for="nombre2">Nombre 2:</label><br>
+                        <input type="text" id="nombre2" name="nombre2"><br>
+                        <label for="edad2">Edad 2:</label><br>
+                        <input type="number" id="edad2" name="edad2"><br>
+                    
+                        <label for="nombre3">Nombre 3:</label><br>
+                        <input type="text" id="nombre3" name="nombre3"><br>
+                        <label for="edad3">Edad 3:</label><br>
+                        <input type="number" id="edad3" name="edad3"><br>
+                    
+                    <br>
+                    <button onclick="menoredad()">Calcular</button>
+            <p id="menor"></p>
+            <br>
+                <p><label for="antiguedad">Antigüedad (años):</label><br>
+                <input type="number" id="antiguedad"></p>
+                <button onclick="calcularBono()">Calcular</button>
+            </form>
+        </code>
+    </div>
+
+
+</body>
+
+</html>
